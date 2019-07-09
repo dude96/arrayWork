@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,6 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        var a = 0
+        for (i in 0 until 100){
+            a++
+        }
+        Log.d("tttttttttttt","$a")
+
+    }
+    fun test1(){
         var teacher = Teacher()
         teacher.addStudent(Student())
         teacher.addStudent(Student())
@@ -26,7 +36,6 @@ class MainActivity : AppCompatActivity() {
 
 
         teacher.getStudentListAverage85()
-
     }
 }
 
